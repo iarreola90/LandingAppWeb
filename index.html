@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi CV</title>
+    <meta name="theme-color" content="#212BB0"/>
+
+    <link rel="manifest" href="manifest.json">
+    <style>
+        /* Estilos generales */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: #f3f3f3;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 85%;
+            margin: auto;
+            max-width: 1200px;
+            padding: 20px;
+        }
+
+        /* Encabezado */
+        header {
+            background: #212BB0;
+            color: white;
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            font-weight: 300;
+        }
+
+        /* Foto de perfil */
+        .photo img {
+            display: block;
+            margin: 20px auto;
+            border-radius: 50%;
+            width: 180px;
+            height: 180px;
+            object-fit: cover;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Secciones */
+        section {
+            margin: 40px 0;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            color: #212BB0;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+        }
+
+        /* Estilo de habilidades */
+        .skills-container {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .skill-card {
+            background: white;
+            width: calc(50% - 10px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .skill-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .skill-card h3 {
+            color: #212BB0;
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+        }
+
+        .skill-card ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .skill-card ul li {
+            color: #555;
+            font-size: 1rem;
+            margin: 8px 0;
+            font-weight: 500;
+        }
+
+        /* Información personal */
+        .personal-info p {
+            font-size: 1.1rem;
+            font-weight: 300;
+            color: #555;
+            margin: 8px 0;
+        }
+
+        /* Pie de página */
+        footer {
+            text-align: center;
+            background-color: #212BB0;
+            color: white;
+            padding: 15px;
+            font-size: 0.9rem;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            .skill-card {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <h1>Ivan Arreola</h1>
+        <p>Desarrollador Web | Ingeniero de Software | Full Stack Developer</p>
+    </div>
+</header>
+
+<div class="container">
+    <section class="photo">
+        <img src="./img/foto.jpg" alt="Foto de perfil">
+    </section>
+
+    <section>
+        <h2>Sobre Mí</h2>
+        <p>
+            Soy un desarrollador web apasionado con experiencia en el desarrollo de aplicaciones modernas. Me encanta crear soluciones eficientes que mejoren la experiencia del usuario y resuelvan problemas complejos.
+        </p>
+    </section>
+
+    <section>
+        <h2>Habilidades</h2>
+        <div class="skills-container">
+            <!-- Habilidades Técnicas -->
+            <div class="skill-card">
+                <h3>Habilidades Técnicas</h3>
+                <ul>
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>JavaScript</li>
+                    <li>React.js</li>
+                    <li>Node.js</li>
+                    <li>Python</li>
+                    <li>SQL</li>
+                    <li>Docker</li>
+                </ul>
+            </div>
+            <!-- Habilidades Blandas -->
+            <div class="skill-card">
+                <h3>Habilidades Blandas</h3>
+                <ul>
+                    <li>Trabajo en equipo</li>
+                    <li>Resolución de problemas</li>
+                    <li>Comunicación efectiva</li>
+                    <li>Liderazgo</li>
+                    <li>Adaptabilidad</li>
+                    <li>Creatividad</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="personal-info">
+        <h2>Información Personal</h2>
+        <p>Email: ivan@correo.com</p>
+        <p>Teléfono: +123 456 7890</p>
+        <p>Ubicación: Chihuahua, México</p>
+    </section>
+</div>
+
+<footer>
+    <p>&copy; Ivan Arreola. Todos los derechos reservados.</p>
+</footer>
+
+</body>
+</html>
